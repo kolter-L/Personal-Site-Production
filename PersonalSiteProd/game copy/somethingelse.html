@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Function Example</title>
+    <!-- Include external JavaScript file -->
+
+    <style> 
+
+        .indexIndicator {
+            width: 100px;
+            height: 100px;
+            transition: background-color; 
+        }
+
+
+        body {
+            overflow: hidden;
+            background-color:#fff0d3;
+        }
+
+        .main {
+        display:flex;
+        --s: 100px;  /* size  */
+        --m: 4px;    /* margin */
+        --f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);
+        }
+
+        .container {
+
+            height: 1200px;
+            width: 1200px;
+            margin: auto;
+        font-size: 0; /*disable white space between inline block element */
+        }
+
+        .container div {
+            white-space: nowrap;
+        width: var(--s);
+        margin: var(--m);
+        height: calc(var(--s)*1.1547); 
+        display: inline-block;
+        font-size:initial;
+        clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+        background: grey;
+        margin-bottom: calc(var(--m) - var(--s)*0.2885); 
+        }
+
+        .container::before {
+        content: "";
+        width: calc(var(--s)/2 + var(--m));
+        float: left;
+        height: 120%;
+        shape-outside: repeating-linear-gradient(     
+                        #0000 0 calc(var(--f) - 3px),      
+                        #000  0 var(--f));
+        }
+
+
+        #fireItUp {
+            text-align: center;
+            background-color: goldenrod;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <!-- Create a button directly in the HTML document -->
+    <div class="main">
+        <div class="container">
+        
+            <div id="fireItUp"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div id="red-button" style="background-color: rgb(255, 0, 0);"></div>
+          <div id="blue-button" style="background-color: blue;"></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div id=></div>
+          <div></div>
+          <div id="yellow-button" style="background-color: rgb(255, 255, 0);"></div>
+          <div id="indexIndicator" class="indexIndicator"></div>
+          <div id="green-button" style="background-color: green;"></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div id="purple-button" style="background-color: violet;"></div>
+          <div id="orange-button" style="background-color: orange;"></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+    <script src="game.js" defer></script>
+    <script src="tonal.js" defer></script>
+    <script src="gameDriver.js" defer></script>
+    
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kolter Leisy">
+    <title>Lyric Searcher</title>
+    <link rel="stylesheet" href="../css/generalstyle.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+    crossorigin="anonymous">
+    </script>
+
+    <script src="lyricSearcher.js" defer></script>
+
+    <style>
+        #search {
+            background-color: black;
+            height: 20px;
+            width: 70px;
+            color: rgb(59, 159, 247);
+            margin-top: 10px; /* Adjust margin as needed */
+            padding-top: 2px;
+            display: inline-block;
+            border-radius: 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <ul class="navbar">
+        <li><a href="../standardPages/aboutMe.html">Home</a></li>
+        <li><a href="../standardPages/projects.html">My Projects</a></li>
+        <li><a href="../memeScroller/importantMemes.html">Important Memes</a></li>
+        <li><a href="../game/somethingelse.html">Ultimate Simon Says</a></li>
+        <li><a href="lyricSearcher.html">Lyric Finder</a></li>
+    </ul>
+
+    <br>
+
+    <div style="text-align: center;">
+
+
+        <h3>This is a Lyric Finder. Enter the Artist and the Song to search for lyrics. The spelling and spaces have to be exact. Here are a few songs that will work if copied precisely:</h3>
+
+        <br>
+
+        <ul>
+            <li>Artist: Haddaway</li>
+            <li>Song: What is Love</li>
+            <br>
+            <ul>
+            <li>Artist: ABBA</li>
+            <li>Song: Dancing Queen</li>
+            <br>
+            <li>Artist: Taylor Swift</li>
+            <li>Song: Shake it Off</li>
+            <br>
+        </ul>
+
+        <input type="text" class="artist" placeholder="Artist" style="margin-bottom: 10px; width: 150px;">
+        <br>
+        <input type="text" class="song" placeholder="Song" style="margin-bottom: 10px; width: 150px;">
+        <br>
+        <div id="search">Search</div>
+        <br>
+    </div>
+
+    <div class="lyrics"></div>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* transitions and animations for the tag in about me */
+
+.transitional {
+    font-family: monospace;
+    color:crimson;
+    align-self: center;
+    font-size: small;
+    
+}
+
+.transitional:hover {
+    animation: blink 10s infinite;
+    font-size: x-large;
+    transition-duration: 1s;
+}
+
+/* this cycles through many different colors to create a rainbow effect */
+
+@keyframes blink {
+    0% {
+        color: blue;
+        opacity: 1;
+    }
+    10% {
+        color: violet;
+        opacity: 1;
+    }
+    20% {
+        color: red;
+        opacity: 1;
+    }
+    30% {
+        color: orangered;
+        opacity: 1;
+    }
+    40% {
+        color: orange;
+        opacity: 1;
+    }
+    50% {
+        color: yellow;
+        opacity: 1;
+    }
+    65% {
+        color: limegreen;
+        opacity: 1;
+    }
+    80% {
+        color: turquoise;
+        opacity: 1;
+    }
+    100% {
+        color: blue;
+        opacity: 1;
+    }
+}
+
+.blinking {
+    animation: blink 10s infinite;
+}
+
+/* this is the keyframes animations that moves the scrolling gifs in importantMemes.html */
+
+@keyframes slide {
+    from {
+        transform: translateX(-100%)
+    }
+    to {
+        transform: translateX(0)
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 40px 0;
+    background: white;
+    white-space: nowrap;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    white-space: nowrap;
+    animation: 30s slide infinite linear;
+}
+
+/* this ensures that all memes have the same height and fit within the box */
+
+.logos-slide img{
+    height: 200px;
+    margin: 0 40;
+}
+
+/* this is repeated for the second and nth slideshows */
+
+@keyframes slide1 {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(-100%)
+    }
+}
+
+.logos1 {
+    overflow: hidden;
+    padding: 40px 0;
+    background: white;
+    white-space: nowrap;
+}
+
+.logos1:hover .logos1-slide {
+    animation-play-state: paused;
+}
+
+.logos1-slide {
+    display: inline-block;
+    white-space: nowrap;
+    animation: 30s slide1 infinite linear;
+}
+
+.logos1-slide img{
+    height: 200px;
+    margin: 0 40;
+}

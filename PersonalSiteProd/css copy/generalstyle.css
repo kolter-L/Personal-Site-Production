@@ -1,0 +1,65 @@
+
+
+/* lil testing comment */
+
+/* styling for the tables */
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 5px solid #ea0c0c;
+    padding: 40px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; /* Background color for header cells */
+}
+
+/* background color for body and standardized font family */
+
+body {
+    background-color:#fff0d3;
+}
+
+* {
+    font-family: "Copperplate";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* standardized navbar styling */
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #333; /* Background color of the navbar */
+}
+
+ul.navbar li {
+    float: left;
+}
+
+ul.navbar li a {
+    display: block;
+    color: white; /* Text color of the links */
+    text-align: center;
+    padding: 14px 16px; /* Adjust padding as needed */
+    text-decoration: none;
+}
+
+ul.navbar li a:hover {
+    background-color: #555; /* Background color on hover */
+}
+
+
+
